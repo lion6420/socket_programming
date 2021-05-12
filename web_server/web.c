@@ -2,7 +2,7 @@
 
 int main() {
 	int listenfd, connfd;
-	sockaddr_in servaddr, cliaddr;
+	struct sockaddr_in servaddr, cliaddr;
 	socklen_t clilen;
 
 	listenfd = socket(AF_INET, SOCK_STREAM, 0);
